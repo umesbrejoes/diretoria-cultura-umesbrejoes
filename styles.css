@@ -90,3 +90,8 @@
 
 /* ACESSO DA DIRETORIA NO PORTAL */
 .admin-nav-link{background:var(--dark);color:#fff!important;padding-inline:14px!important;border-radius:999px!important}.admin-nav-link:hover{background:var(--green-dark)!important;color:#fff!important}.admin-footer-link{color:var(--green-dark)!important;font-weight:900;font-size:.78rem}.admin-footer-link:hover{color:var(--pink)!important}@media(max-width:760px){.nav-open .links .admin-nav-link{text-align:center;margin-top:6px}}
+
+/* ACESSO DA DIRETORIA — VISIBILIDADE REFORÇADA */
+.admin-nav-link{display:inline-flex!important;align-items:center;justify-content:center;background:var(--dark);color:#fff!important;padding:10px 16px!important;border-radius:999px!important;font-weight:900!important;white-space:nowrap;border:2px solid var(--green)!important}
+.admin-nav-link:hover{background:var(--green-dark)!important;color:#fff!important}
+@media(max-width:760px){.nav-open .links .admin-nav-link{display:flex!important;width:100%;box-sizing:border-box;text-align:center;margin-top:8px}}
