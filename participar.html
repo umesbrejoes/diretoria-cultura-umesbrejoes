@@ -1,1 +1,53 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Participar | Diretoria de Cultura</title><link rel="stylesheet" href="styles.css"><script src="scripts.js" defer></script></head><body><header class="site-header"><div class="topline"></div><div class="wrap header-main"><a class="official-brand" href="index.html" aria-label="UMES Brejões - Diretoria de Cultura"><img class="official-logo" src="logo-umes.webp" alt="Logo oficial da UMES Brejões"><div class="brand-copy"><strong>UNIÃO MUNICIPAL DOS E DAS<br>ESTUDANTES DE BREJÕES</strong><small>DIRETORIA DE CULTURA</small></div></a><button class="menu" aria-label="Abrir menu" onclick="document.querySelector('.site-header').classList.toggle('nav-open')">☰</button><nav class="links" aria-label="Navegação principal"><a  href="index.html">Início</a><a  href="projetos.html">Projetos</a><a  href="agenda.html">Agenda</a><a  href="editais.html">Editais</a><a  href="noticias.html">Notícias</a><a  href="galeria.html">Galeria</a><a  href="cultiva.html">CULTIVA</a><a class="active" href="participar.html">Participar</a><a  href="sobre.html">Sobre</a></nav></div></header><main><section class="page-hero"><div class="wrap"><div class="tag">Participe</div><h1>Faça cultura com a UMES.</h1><p>Tem uma ideia, um talento ou uma proposta cultural? Encontre caminhos para participar.</p></div></section><section class="page"><div class="wrap narrow"><div class="content-grid three"><article class="content-card"><div class="tag">IDEIA</div><h2>Proponha uma ação</h2><p>Apresente uma oficina, encontro, mostra ou outra atividade cultural.</p></article><article class="content-card"><div class="tag">TALENTO</div><h2>Mostre seu trabalho</h2><p>Compartilhe sua produção artística e faça parte dos registros da Diretoria.</p></article><article class="content-card"><div class="tag">COLABORAÇÃO</div><h2>Construa junto</h2><p>Participe da organização e ajude a criar novas ações culturais.</p></article></div><div class="contact-box"><div><div class="tag">Contato</div><h2>Fale com a Diretoria de Cultura</h2><p>O formulário online será conectado aqui. Enquanto isso, você pode entrar em contato diretamente.</p></div><a class="btn primary" href="mailto:umesbrejoes@gmail.com?subject=Participação - Diretoria de Cultura">Enviar mensagem</a></div></div></section></main><footer><div class="wrap footer-grid"><div class="footer-brand"><img class="footer-logo" src="logo-umes.webp" alt="Logo oficial da UMES Brejões"><div><strong>UNIÃO MUNICIPAL DOS E DAS ESTUDANTES DE BREJÕES</strong><span>DIRETORIA DE CULTURA</span></div></div><div><span>© 2026 UMES Brejões</span><span>Arte • Cultura • Organização</span></div></div></footer></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Formulário de participação da Diretoria de Cultura da UMES Brejões.">
+<title>Participar | Diretoria de Cultura</title>
+<link rel="stylesheet" href="styles.css"><script src="scripts.js" defer></script></head>
+<body>
+<header class="site-header"><div class="topline"></div><div class="wrap header-main">
+<a class="official-brand" href="index.html" aria-label="UMES Brejões - Diretoria de Cultura"><img class="official-logo" src="logo-umes.webp" alt="Logo oficial da UMES Brejões"><div class="brand-copy"><strong>UNIÃO MUNICIPAL DOS E DAS<br>ESTUDANTES DE BREJÕES</strong><small>DIRETORIA DE CULTURA</small></div></a>
+<button class="menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+<nav class="links" aria-label="Navegação principal"><a href="index.html">Início</a><a href="projetos.html">Projetos</a><a href="agenda.html">Agenda</a><a href="editais.html">Editais</a><a href="noticias.html">Notícias</a><a href="galeria.html">Galeria</a><a href="cultiva.html">CULTIVA</a><a class="active" aria-current="page" href="participar.html">Participar</a><a href="sobre.html">Sobre</a></nav>
+</div></header>
+<main>
+<section class="movement-hero internal-action-hero"><div class="wrap movement-hero-grid">
+<div class="movement-copy"><div class="movement-kicker">UMES BREJÕES <b>•</b> PARTICIPAÇÃO</div><h1>Seu espaço.<br><em>Sua voz.</em></h1><p>Preencha o formulário para participar de atividades, apresentar uma produção, propor uma ação ou colaborar com a Diretoria de Cultura.</p></div>
+<div class="movement-poster"><span class="poster-sticker">PARTICIPE<br>DO MOVIMENTO</span><b>★</b><strong>CRIAR<br>OCUPAR<br>TRANSFORMAR</strong><small>BREJÕES · BA</small></div>
+</div></section>
+
+<section class="page"><div class="wrap participation-layout">
+<div class="participation-form-wrap">
+<div class="section-head"><div class="tag">Formulário de participação</div><h2>Quero participar</h2><p>Envie seus dados e escolha como você quer construir a cultura estudantil. Os campos marcados com * são obrigatórios.</p></div>
+<form class="participation-form" action="https://formsubmit.co/umesbrejoes@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Nova participação — Diretoria de Cultura da UMES Brejões">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://umesbrejoes.github.io/diretoria-cultura-umesbrejoes/participar.html?enviado=1">
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<label>Nome completo *<input type="text" name="nome" required autocomplete="name" placeholder="Digite seu nome"></label>
+<div class="form-two"><label>Escola / instituição *<input type="text" name="escola" required placeholder="Onde você estuda?"></label><label>Série / curso<input type="text" name="serie_curso" placeholder="Ex.: 9º ano, Ensino Médio..."></label></div>
+<div class="form-two"><label>Contato *<input type="text" name="contato" required placeholder="WhatsApp ou e-mail"></label><label>Como quer participar? *<select name="tipo_participacao" required><option value="">Selecione uma opção</option><option>Inscrever-me em uma atividade</option><option>Propor uma atividade cultural</option><option>Apresentar meu trabalho artístico</option><option>Participar do CULTIVA</option><option>Colaborar com a Diretoria de Cultura</option><option>Outro</option></select></label></div>
+<label>Atividade ou projeto relacionado<select name="atividade"><option value="">Selecione, se houver</option><option>COMEB 2026</option><option>CULTIVA</option><option>Outra atividade da agenda</option><option>Ainda não sei</option></select></label>
+<label>Conte um pouco mais<textarea name="mensagem" rows="6" placeholder="Fale sobre sua ideia, produção, atividade ou forma de participação."></textarea></label>
+<label class="check-label"><input type="checkbox" name="autorizacao_contato" value="sim" required><span>Autorizo a UMES Brejões a utilizar os dados informados para entrar em contato sobre esta participação. *</span></label>
+<button class="btn form-submit" type="submit">ENVIAR PARTICIPAÇÃO →</button>
+<p class="form-note">Ao enviar, sua solicitação será encaminhada para a Diretoria de Cultura. Evite informar dados pessoais desnecessários no campo de mensagem.</p>
+</form>
+<div class="form-success" id="form-success" hidden><strong>Recebemos sua solicitação! ✦</strong><span>A Diretoria de Cultura poderá entrar em contato pelo contato informado.</span></div>
+</div>
+<aside class="participation-side">
+<div class="side-action-card"><span>VOCÊ PODE</span><h3>Propor uma atividade</h3><p>Oficina, apresentação, mostra, encontro ou outra ação cultural.</p><a href="#formulario" class="text-link">Preencher formulário →</a></div>
+<div class="side-action-card pink-side"><span>VOCÊ PODE</span><h3>Apresentar seu trabalho</h3><p>Música, dança, teatro, literatura, audiovisual, fotografia, artes visuais e outras linguagens.</p></div>
+<div class="side-action-card dark-side"><span>VOCÊ PODE</span><h3>Construir junto</h3><p>Ajude a organizar atividades e fortalecer a cultura estudantil em Brejões.</p></div>
+</aside>
+</div></section>
+</main>
+<footer><div class="wrap footer-grid"><div class="footer-brand"><img class="footer-logo" src="logo-umes.webp" alt="Logo oficial da UMES Brejões"><div><strong>UNIÃO MUNICIPAL DOS E DAS ESTUDANTES DE BREJÕES</strong><span>DIRETORIA DE CULTURA</span></div></div><div><span>© 2026 UMES Brejões</span><span>Arte • Cultura • Organização</span></div></div></footer>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+ const params=new URLSearchParams(location.search);
+ const success=document.getElementById("form-success");
+ if(params.get("enviado")==="1"&&success){success.hidden=false;success.scrollIntoView({behavior:"smooth",block:"center"});}
+});
+</script>
+</body></html>
