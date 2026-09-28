@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Inscrição em atividade da Diretoria de Cultura da UMES Brejões.">
+<title>Inscrição — Diretoria de Cultura | UMES Brejões</title>
+<link rel="stylesheet" href="../styles.css"><script src="../scripts.js" defer></script>
+</head>
+<body>
+<header class="site-header"><div class="topline"></div><div class="wrap header-main">
+<a class="official-brand" href="../index.html" aria-label="UMES Brejões - Diretoria de Cultura"><img class="official-logo" src="../logo-umes.webp" alt="Logo oficial da UMES Brejões"><div class="brand-copy"><strong>UNIÃO MUNICIPAL DOS E DAS<br>ESTUDANTES DE BREJÕES</strong><small>DIRETORIA DE CULTURA</small></div></a>
+<button class="menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+<nav class="links" aria-label="Navegação principal"><a href="../index.html">Início</a><a href="../projetos.html">Projetos</a><a class="active" href="../agenda.html">Agenda</a><a href="../editais.html">Editais</a><a href="../noticias.html">Notícias</a><a href="../galeria.html">Galeria</a><a href="../cultiva.html">CULTIVA</a><a class="nav-cta" href="../participar.html">Participar</a><a href="../sobre.html">Sobre</a></nav>
+</div></header>
+<main>
+<section class="activity-signup-hero"><div class="wrap"><a class="news-back" href="../agenda.html">← Voltar para a agenda</a><div class="tag">INSCRIÇÃO • DIRETORIA DE CULTURA</div><h1>Inscrição na atividade.</h1><p>Preencha seus dados para participar. A equipe da Diretoria de Cultura organizará as inscrições e poderá entrar em contato com você sobre a atividade.</p></div></section>
+<section class="page"><div class="wrap activity-signup-layout">
+<article class="signup-card">
+<div class="tag">DADOS DA PARTICIPAÇÃO</div><h2 id="activity-title">Inscrição — Atividade cultural</h2><p class="signup-intro">Os campos marcados com * são obrigatórios.</p>
+<form action="https://formsubmit.co/umesbrejoes@gmail.com" method="POST">
+<input type="hidden" name="_subject" id="form-subject" value="Nova inscrição — Diretoria de Cultura da UMES Brejões">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://umesbrejoes.github.io/diretoria-cultura-umesbrejoes/agenda/inscricao.html?enviado=1">
+<input type="text" name="_honey" style="display:none">
+<input type="hidden" name="Atividade" id="activity-field" value="Atividade cultural">
+<label>Nome completo *<input required name="Nome completo" type="text" autocomplete="name"></label>
+<label>Escola / instituição *<input required name="Escola / instituição" type="text"></label>
+<label>Série / curso<input name="Série / curso" type="text"></label>
+<label>Contato *<input required name="Contato" type="text" autocomplete="tel"></label>
+<fieldset><legend>Você já trabalha com fotografia?</legend><label class="radio"><input type="radio" name="Já trabalha com fotografia?" value="Sim"> Sim</label><label class="radio"><input type="radio" name="Já trabalha com fotografia?" value="Não"> Não</label></fieldset>
+<label>Observações<textarea name="Observações" rows="5" placeholder="Conte algo que a equipe precisa saber sobre sua participação."></textarea></label>
+<label class="check"><input required type="checkbox" name="Autorização" value="Concordo"> Confirmo que as informações fornecidas são verdadeiras e autorizo seu uso para organização desta atividade.</label>
+<button class="btn primary" type="submit">CONFIRMAR INSCRIÇÃO →</button>
+<p class="form-note">Evite enviar dados pessoais desnecessários. Em caso de dúvida, procure a Diretoria de Cultura da UMES.</p>
+</form>
+<div id="signup-success" class="signup-success" hidden><strong>Inscrição enviada!</strong><span>Recebemos seus dados. A Diretoria de Cultura poderá entrar em contato com você com informações sobre a atividade.</span><a class="text-link" href="../agenda.html">Voltar para a agenda →</a></div>
+</article>
+<aside class="signup-sidebar">
+<div class="cultiva-side-card"><span>PARTICIPAÇÃO ESTUDANTIL</span><strong>Ocupar.<br>Criar.<br>Transformar.</strong><p>As atividades culturais são espaços de expressão, encontro e participação da juventude.</p></div>
+<div class="news-side-card dark-news-side"><span>OUTRA ATIVIDADE?</span><h3>Quer propor uma ação ou apresentar seu trabalho?</h3><a class="btn light-btn" href="../participar.html">Participar →</a></div>
+</aside>
+</div></section>
+</main>
+<footer><div class="wrap footer-grid"><div class="footer-brand"><img class="footer-logo" src="../logo-umes.webp" alt="Logo oficial da UMES Brejões"><div><strong>UNIÃO MUNICIPAL DOS E DAS ESTUDANTES DE BREJÕES</strong><span>DIRETORIA DE CULTURA</span></div></div><div><span>© 2026 UMES Brejões</span><span>Arte • Cultura • Organização</span></div></div></footer>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+ const p=new URLSearchParams(location.search);
+ const activity=p.get("atividade")||"Atividade cultural";
+ const title=document.getElementById("activity-title");
+ const field=document.getElementById("activity-field");
+ const subject=document.getElementById("form-subject");
+ const safe=activity.replace(/[<>]/g,"");
+ title.textContent="Inscrição — "+safe;
+ field.value=safe;
+ subject.value="Nova inscrição — "+safe+" — Diretoria de Cultura da UMES Brejões";
+ if(p.get("enviado")==="1"){document.querySelector("form").hidden=true;document.getElementById("signup-success").hidden=false;}
+});
+</script>
+</body></html>
