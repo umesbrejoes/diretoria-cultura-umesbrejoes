@@ -13,15 +13,42 @@
       <img class="official-logo" src="logo-umes.webp" alt="Logo oficial da UMES Brejões">
       <div class="brand-copy"><strong>UNIÃO MUNICIPAL DOS E DAS<br>ESTUDANTES DE BREJÕES</strong><small>DIRETORIA DE CULTURA</small></div>
     </a>
-    <button class="menu" aria-label="Abrir menu" onclick="document.querySelector('.site-header').classList.toggle('nav-open')">☰</button>
-    <nav class="links" aria-label="Navegação principal"><a class="active" href="index.html">Início</a><a href="projetos.html">Projetos</a><a href="agenda.html">Agenda</a><a href="editais.html">Editais</a><a href="noticias.html">Notícias</a><a href="galeria.html">Galeria</a><a href="cultiva.html">CULTIVA</a><a href="participar.html">Participar</a><a href="sobre.html">Sobre</a></nav>
+    <button class="menu" aria-label="Abrir menu" aria-expanded="false" onclick="const h=document.querySelector('.site-header');h.classList.toggle('nav-open');this.setAttribute('aria-expanded',h.classList.contains('nav-open'))">☰</button>
+    <nav class="links" aria-label="Navegação principal">
+      <a class="active" href="index.html">Início</a>
+      <div class="nav-group">
+        <a href="projetos.html">Cultura <span class="chevron">▼</span></a>
+        <div class="submenu">
+          <a href="projetos.html">Projetos culturais</a>
+          <a href="cultiva.html" class="submenu-highlight">CULTIVA</a>
+          <a href="galeria.html">Galeria cultural</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="agenda.html">Agenda <span class="chevron">▼</span></a>
+        <div class="submenu">
+          <a href="agenda.html">Agenda cultural</a>
+          <a href="editais.html">Editais e chamadas</a>
+          <a href="noticias.html">Notícias</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <a href="sobre.html">UMES <span class="chevron">▼</span></a>
+        <div class="submenu">
+          <a href="sobre.html">Sobre a Diretoria</a>
+          <a href="participar.html">Participar</a>
+          <a href="index.html#missao">Nossa missão</a>
+        </div>
+      </div>
+      <a href="participar.html">Participar</a>
+    </nav>
   </div>
 </header>
 <main>
 <section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">DIRETORIA DE CULTURA · UMES BREJÕES</div><h1>Arte, cultura e <em>movimento estudantil.</em></h1><p>Um espaço para valorizar a produção cultural dos estudantes, fortalecer a identidade de Brejões e transformar a escola em território de criação, expressão e participação.</p><div class="buttons"><a class="btn primary" href="projetos.html">Conheça os projetos</a><a class="btn secondary" href="agenda.html">Ver agenda cultural</a></div></div><div class="hero-poster"><span>UMES</span><strong>CULTURA</strong><i>CRIAR · ORGANIZAR · EXPRESSAR</i></div></div></section>
 <section class="identity-strip"><div class="wrap"><strong>CULTURA É DIREITO.</strong><span>É expressão, memória, criação e participação estudantil.</span></div></section>
 <section class="page"><div class="wrap"><div class="section-head"><h2>Explore o site</h2><p>Um portal para acompanhar as ações culturais e os projetos da Diretoria.</p></div><div class="grid"><a class="card" href="projetos.html"><div class="icon">🎨</div><h3>Projetos</h3><p>Conheça as iniciativas culturais da Diretoria.</p></a><a class="card" href="agenda.html"><div class="icon">📅</div><h3>Agenda</h3><p>Acompanhe eventos, oficinas e atividades.</p></a><a class="card" href="editais.html"><div class="icon">📣</div><h3>Editais</h3><p>Encontre oportunidades e chamadas culturais.</p></a><a class="card" href="noticias.html"><div class="icon">📰</div><h3>Notícias</h3><p>Veja novidades, registros e acontecimentos.</p></a><a class="card" href="galeria.html"><div class="icon">📸</div><h3>Galeria</h3><p>Registros das ações e produções estudantis.</p></a><a class="card" href="participar.html"><div class="icon">✊🏽</div><h3>Participar</h3><p>Envie uma proposta, ideia ou manifestação cultural.</p></a></div></div></section>
-<section class="page"><div class="wrap"><div class="banner"><div class="tag">Nossa missão</div><h2>Fazer da cultura um direito vivido na escola.</h2><p>Queremos aproximar estudantes das manifestações culturais, preservar a memória local e criar oportunidades para que a juventude produza, organize e ocupe os espaços culturais de Brejões.</p><div class="buttons"><a class="btn secondary" href="sobre.html">Saiba mais sobre a Diretoria</a></div></div></div></section>
+<section class="page" id="missao"><div class="wrap"><div class="banner"><div class="tag">Nossa missão</div><h2>Fazer da cultura um direito vivido na escola.</h2><p>Queremos aproximar estudantes das manifestações culturais, preservar a memória local e criar oportunidades para que a juventude produza, organize e ocupe os espaços culturais de Brejões.</p><div class="buttons"><a class="btn secondary" href="sobre.html">Saiba mais sobre a Diretoria</a></div></div></div></section>
 </main>
 <footer><div class="wrap footer-grid"><div class="footer-brand"><img class="footer-logo" src="logo-umes.webp" alt="Logo oficial da UMES Brejões"><div><strong>UNIÃO MUNICIPAL DOS E DAS ESTUDANTES DE BREJÕES</strong><span>DIRETORIA DE CULTURA</span></div></div><div><span>© 2026 UMES Brejões</span><span>Arte • Cultura • Organização</span></div></div></footer>
 </body></html>
