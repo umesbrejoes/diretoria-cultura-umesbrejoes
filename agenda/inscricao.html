@@ -16,11 +16,8 @@
 <section class="page"><div class="wrap activity-signup-layout">
 <article class="signup-card">
 <div class="tag">DADOS DA PARTICIPAÇÃO</div><h2 id="activity-title">Inscrição — Atividade cultural</h2><p class="signup-intro">Os campos marcados com * são obrigatórios.</p>
-<form action="https://formsubmit.co/umesbrejoes@gmail.com" method="POST">
-<input type="hidden" name="_subject" id="form-subject" value="Nova inscrição — Diretoria de Cultura da UMES Brejões">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_next" value="https://umesbrejoes.github.io/diretoria-cultura-umesbrejoes/agenda/inscricao.html?enviado=1">
-<input type="text" name="_honey" style="display:none">
+<form data-directoria-form="inscricao">
+
 <input type="hidden" name="Atividade" id="activity-field" value="Atividade cultural">
 <label>Nome completo *<input required name="Nome completo" type="text" autocomplete="name"></label>
 <label>Escola / instituição *<input required name="Escola / instituição" type="text"></label>
@@ -47,11 +44,9 @@ document.addEventListener("DOMContentLoaded",()=>{
  const activity=p.get("atividade")||"Atividade cultural";
  const title=document.getElementById("activity-title");
  const field=document.getElementById("activity-field");
- const subject=document.getElementById("form-subject");
  const safe=activity.replace(/[<>]/g,"");
  title.textContent="Inscrição — "+safe;
  field.value=safe;
- subject.value="Nova inscrição — "+safe+" — Diretoria de Cultura da UMES Brejões";
  if(p.get("enviado")==="1"){document.querySelector("form").hidden=true;document.getElementById("signup-success").hidden=false;}
 });
 </script>
